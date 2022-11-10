@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  tools {node , npm , ng }
   stages {
     stage('pull') {
       steps {
