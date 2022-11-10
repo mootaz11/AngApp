@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   gather_facts: true
-  root: yes
+  become: yes
+  become_method: sudo
+  become_user: root
   roles:
      - { role: build }
