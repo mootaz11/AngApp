@@ -1,7 +1,6 @@
 ---
 - hosts: localhost
   gather_facts: true
-  become: yes
-  become_user: root
+  root: yes
   roles:
      - { role: build }
