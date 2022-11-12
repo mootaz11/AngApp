@@ -14,12 +14,18 @@ pipeline {
             }
           }
         }
-    stage('build') {
+    stage('build ') {
       steps { 
         script{ 
           sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml "
         }
       }
     }
+     stage('Build Docker Img ') {
+            steps {
+                script{
+                    sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml "
+                }}}
+    
       }
     }
