@@ -1,8 +1,8 @@
 ---
 # tasks file for docker-registry.
- - name : connect to docker hub
-     command : docker login -u alaa1998 -p Alaa1998@
-   - name : adding tag to image 
-     command : docker tag angapp:latest alaa1998/angapp:latest
-   - name : push image to dockerhub 
-     command : docker push alaa1998/angapp:latest
+- name : connect to docker hub
+  command : docker login -u alaa1998 -p Alaa1998@
+- name : adding tag to image 
+  command : docker tag angapp:latest alaa1998/angapp:latest
+- name : push image to dockerhub 
+  command : docker push alaa1998/angapp:latest
