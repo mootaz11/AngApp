@@ -29,7 +29,7 @@ pipeline {
     stage('Push Image Docker ') {
             steps {
                 script{
-                    sh "ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml "
+                    sh "ansible-playbook ansible/docker-registry.yml -i ansible/inventory/host.yml "
                 }}}
       }
     }
